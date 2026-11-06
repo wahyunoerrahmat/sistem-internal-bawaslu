@@ -1,0 +1,154 @@
+# ==============================================================================
+# .gitignore - Sistem Internal Bawaslu (Laravel 12 + Vite + Tailwind CSS)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment & Credentials (SANGAT PENTING: Jangan bocorkan kredensial)
+# ------------------------------------------------------------------------------
+.env
+.env.backup
+.env.*.backup
+.env.production
+!.env.example
+auth.json
+Homestead.json
+Homestead.yaml
+
+# ------------------------------------------------------------------------------
+# 2. Dependencies & Package Managers
+# ------------------------------------------------------------------------------
+/vendor/
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------------------------------------------------------
+# 3. Laravel Storage, Cache, and Framework Temporary Files
+# ------------------------------------------------------------------------------
+*.log
+/storage/*.key
+/storage/pail
+/storage/logs/*
+!/storage/logs/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+
+# Storage Public (File upload pengujian lokal seperti foto absensi/tamu)
+/storage/app/public/*
+!/storage/app/public/.gitignore
+
+# Bootstrap Cache
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
+# ------------------------------------------------------------------------------
+# 4. Frontend Build Artifacts (Vite / Mix)
+# ------------------------------------------------------------------------------
+/public/build
+/public/hot
+/public/storage
+
+# ------------------------------------------------------------------------------
+# 5. Database (SQLite local database files)
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite-journal
+*.db
+
+# ------------------------------------------------------------------------------
+# 6. Testing & Profiling Cache
+# ------------------------------------------------------------------------------
+.phpunit.result.cache
+/.phpunit.cache
+.phpactor.json
+
+# ------------------------------------------------------------------------------
+# 7. OS & IDE Configuration Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+/.idea/
+/.vscode/
+/.fleet/
+/.nova/
+/.zed/
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------------------------
+# 8. Local Utility / Demo Scripts (Script demo lokal dengan password/kredensial)
+# ------------------------------------------------------------------------------
+/*.sh
+
+# ------------------------------------------------------------------------------
+# 9. Dokumen Laporan Magang, Presentasi & Panduan Non-Proyek
+# ------------------------------------------------------------------------------
+*.docx
+*.doc
+*.pptx
+*.pdf
+/*.txt
+!/public/robots.txt
+/presentation_preview.html
+/BAB_IV_Pembahasan_dan_Hasil.html
+
+# ------------------------------------------------------------------------------
+# 10. Script Python & Otomasi Penyusunan Laporan
+# ------------------------------------------------------------------------------
+*.py
+/scripts/
+__pycache__/
+*.pyc
+
+# ------------------------------------------------------------------------------
+# 11. Folder Aset Laporan, Ekstraksi Media & Gambar Laporan Magang
+#     (Catatan: public/images/ untuk aset web aplikasi tetap di-track)
+# ------------------------------------------------------------------------------
+/docs/
+/dokumentasi/
+/extracted_fahzriel_media/
+/extracted_ihya_wahyu/
+/extracted_media/
+/generated_diagrams/
+/mockup_tampilan/
+/images/
+crop_*.jpg
+ttd_*.png
+TTD_*.jpeg
+
+# ------------------------------------------------------------------------------
+# 12. Salinan Duplikat / Nested Folder Proyek
+# ------------------------------------------------------------------------------
+/sistem-internal-bawaslu-final/
+
+# ------------------------------------------------------------------------------
+# 13. File Sampah Typo Terminal Bash (Accidental Redirects)
+# ------------------------------------------------------------------------------
+/\$locations
+/\[\[
+/get()
+/jam_masuk
+/json(\$locations)
+/json(\$tracks)
+/latest()
+/latitude
+/longitude
+/map(function
+/name
+/role
+/status
+/whereHas('user'
+/whereIn('role'
+/whereNotNull('latitude')
+/whereNotNull('longitude')
